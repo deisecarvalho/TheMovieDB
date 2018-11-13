@@ -3,4 +3,11 @@
     <string name="wellcomemessage">Wellcome</string>
     <string name="passoum">Here you can read the synopsis of your favorite movies. Choose a genre</string>
     <string name="more">See More</string>
+    <string name="genre_action">Action</string>
+    <string name="genre_adventure">Adventure</string>
+    <string name="genre_horror">Horror</string>
+    <string name="genre_romatic">Romantic</string>
+    <string name="genre_fantasy">Fantasy</string>
+    <string name="genre_war">War</string>
+    <string name="genre_detective">Detective</string>
 </resources>

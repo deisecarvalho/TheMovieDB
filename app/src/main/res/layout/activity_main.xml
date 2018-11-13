@@ -60,23 +60,26 @@
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:layout_margin="16dp"
                 android:orientation="vertical">
+
                 <ImageView
                     android:id="@+id/row1column1ImageView"
-                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/action"></ImageView>
+                    android:contentDescription="@string/genre_action"
+                    android:src="@drawable/action" />
+
                 <TextView
                     android:id="@+id/row1column1TextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:autoSizeTextType="uniform"
-                    android:autoSizeMinTextSize="12sp"
                     android:autoSizeMaxTextSize="20sp"
+                    android:autoSizeMinTextSize="12sp"
                     android:autoSizeStepGranularity="2sp"
-                    android:textStyle="bold"
-                    android:text="Action"></TextView>
+                    android:autoSizeTextType="uniform"
+                    android:text="@string/genre_action"
+                    android:textStyle="bold" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
@@ -104,6 +107,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/genre_adventure"
                     android:src="@drawable/adventure"></ImageView>
 
                 <TextView
@@ -115,7 +119,7 @@
                     android:autoSizeMinTextSize="12sp"
                     android:autoSizeStepGranularity="2sp"
                     android:autoSizeTextType="uniform"
-                    android:text="Adventure"
+                    android:text="@string/genre_adventure"
                     android:textStyle="bold"></TextView>
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -144,6 +148,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/genre_horror"
                     android:src="@drawable/horror"></ImageView>
 
                 <TextView
@@ -155,7 +160,7 @@
                     android:autoSizeMinTextSize="12sp"
                     android:autoSizeStepGranularity="2sp"
                     android:autoSizeTextType="uniform"
-                    android:text="Horror"
+                    android:text="@string/genre_horror"
                     android:textStyle="bold"></TextView>
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -184,6 +189,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/genre_romatic"
                     android:src="@drawable/romantic"></ImageView>
 
                 <TextView
@@ -195,7 +201,7 @@
                     android:autoSizeMinTextSize="12sp"
                     android:autoSizeStepGranularity="2sp"
                     android:autoSizeTextType="uniform"
-                    android:text="Romantic"
+                    android:text="@string/genre_romatic"
                     android:textStyle="bold"></TextView>
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -224,6 +230,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/genre_fantasy"
                     android:src="@drawable/fantasy"></ImageView>
 
                 <TextView
@@ -235,7 +242,7 @@
                     android:autoSizeMinTextSize="12sp"
                     android:autoSizeStepGranularity="2sp"
                     android:autoSizeTextType="uniform"
-                    android:text="Fantasy"
+                    android:text="@string/genre_fantasy"
                     android:textStyle="bold"></TextView>
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -264,6 +271,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/genre_war"
                     android:src="@drawable/war"></ImageView>
 
                 <TextView
@@ -275,7 +283,7 @@
                     android:autoSizeMinTextSize="12sp"
                     android:autoSizeStepGranularity="2sp"
                     android:autoSizeTextType="uniform"
-                    android:text="War"
+                    android:text="@string/genre_war"
                     android:textStyle="bold"></TextView>
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -304,6 +312,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/genre_detective"
                     android:src="@drawable/detective"></ImageView>
 
                 <TextView
@@ -315,7 +324,7 @@
                     android:autoSizeMinTextSize="12sp"
                     android:autoSizeStepGranularity="2sp"
                     android:autoSizeTextType="uniform"
-                    android:text="Detective"
+                    android:text="@string/genre_detective"
                     android:textStyle="bold"></TextView>
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -348,8 +357,9 @@
                     android:autoSizeMinTextSize="12sp"
                     android:autoSizeStepGranularity="2sp"
                     android:autoSizeTextType="uniform"
+                    android:contentDescription="@string/more"
                     android:text="@string/more"
-                    android:textStyle="bold"></TextView>
+                    android:textStyle="bold" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
     </GridLayout>
