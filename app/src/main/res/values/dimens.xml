@@ -6,4 +6,5 @@
     <dimen name="paddingleftright">7dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="listgenretexsize">25sp</dimen>
+    <dimen name="image_side_length">50dp</dimen>
 </resources>

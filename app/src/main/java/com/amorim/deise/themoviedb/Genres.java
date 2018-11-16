@@ -7,11 +7,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-public class ListaGenerosActivity extends AppCompatActivity {
+public class Genres extends AppCompatActivity {
     public Integer id;
     public String name;
 
-    public ListaGenerosActivity(Integer id, String name) {
+    public Genres(Integer id, String name) {
         this.id = id;
         this.name = name;
     }

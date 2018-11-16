@@ -11,4 +11,14 @@
     <string name="genre_mistery">Mistério</string>
     <string name="more">Veja mais</string>
     <string name="textgenretwo">Escolha um gênero</string>
+    <string name="genre">%s</string>
+    <string name="overview">%s</string>
+    <string name="overviewtitle">Sinopse</string>
+    <string name="runtime">Duração: %s</string>
+    <string name="movies_by_genre">Lista de filmes do gênero %s</string>
+    <string name="title">Título: %s</string>
+    <string name="original_title">Título original: %s (%s)</string>
+    <string name="release_date">Data de lançamento: %s</string>
+    <string name="poster_movie_contentDescription">Cartaz %s</string>
+    <string name="backdrop_movie_ContentDescription">Cenário %s</string>
 </resources>

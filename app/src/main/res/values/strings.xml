@@ -12,4 +12,14 @@
     <string name="genre_mistery">Mystery</string>
     <string name="more">See more</string>
     <string name="textgenretwo">Choose a genre</string>
+    <string name="title">Title: %s</string>
+    <string name="original_title">Original Title: %s</string>
+    <string name="release_date">Release Date: %s</string>
+    <string name="poster_movie_contentDescription">%s poster</string>
+    <string name="genre">%s</string>
+    <string name="movies_by_genre">Movie list of genre %s</string>
+    <string name="backdrop_movie_ContentDescription">%s backdrop</string>
+    <string name="overview">%s</string>
+    <string name="runtime">Runtime: %s</string>
+    <string name="overviewtitle">Overview</string>
 </resources>

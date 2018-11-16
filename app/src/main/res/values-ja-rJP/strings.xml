@@ -11,4 +11,14 @@
     <string name="genre_mistery">ミステリー</string>
     <string name="more">続きを見る</string>
     <string name="textgenretwo">ジャンルを選択</string>
+    <string name="genre">%s</string>
+    <string name="overview">%s</string>
+    <string name="overviewtitle">概要</string>
+    <string name="runtime">生涯: %s</string>
+    <string name="movies_by_genre">ジャンルのムービーリスト: %s</string>
+    <string name="title">タイトル: %s</string>
+    <string name="original_title">元のタイトル: %s (%s)</string>
+    <string name="release_date">発売日: %s</string>
+    <string name="poster_movie_contentDescription">映画ポスター %s</string>
+    <string name="backdrop_movie_ContentDescription">景色 %s</string>
 </resources>

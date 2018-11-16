@@ -11,4 +11,14 @@
     <string name="genre_mistery">Mistery</string>
     <string name="more">Mehr sehen</string>
     <string name="textgenretwo">Wähle ein Genre</string>
+    <string name="genre">%s</string>
+    <string name="overview">%s</string>
+    <string name="overviewtitle">Überblick</string>
+    <string name="runtime">Lebensdauer: %s</string>
+    <string name="movies_by_genre">Filmliste des Genres %s</string>
+    <string name="title">Titel: %s</string>
+    <string name="original_title">Originaler titel: %s (%s)</string>
+    <string name="release_date">Veröffentlichungsdatum: %s</string>
+    <string name="poster_movie_contentDescription">Filmplakat %s</string>
+    <string name="backdrop_movie_ContentDescription">Szenerie %s</string>
 </resources>

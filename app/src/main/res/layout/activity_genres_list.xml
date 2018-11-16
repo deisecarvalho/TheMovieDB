@@ -5,17 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ListaGenerosActivity">
+    tools:context=".Genres">
 
     <TextView
+        android:id="@+id/selectGenreTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingLeft="@dimen/paddingleftright"
         android:paddingTop="@dimen/paddingtopbotton"
         android:paddingRight="@dimen/paddingleftright"
         android:paddingBottom="@dimen/paddingtopbotton"
-        android:textSize="@dimen/fixedtextSize"
-        android:text="@string/textgenretwo"/>
+        android:text="@string/textgenretwo"
+        android:textSize="@dimen/fixedtextSize" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/genreListView"

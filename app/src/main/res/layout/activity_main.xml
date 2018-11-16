@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/WellcomeTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="fill_horizontal"
@@ -17,10 +18,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/apresentationGenresTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -29,195 +30,204 @@
         android:paddingRight="@dimen/paddingleftright"
         android:paddingBottom="@dimen/paddingtopbotton"
         android:text="@string/textgenreone"
-        android:textSize="@dimen/fixedtextSize"/>
+        android:textSize="@dimen/fixedtextSize" />
 
     <GridLayout
-        android:orientation="horizontal"
+        android:id="@+id/mainGenresGrid"
         android:layout_width="match_parent"
-        android:layout_weight="18"
         android:layout_height="0dp"
-        android:columnCount="3"
-        android:rowCount="3"
+        android:layout_weight="18"
         android:alignmentMode="alignMargins"
+        android:columnCount="3"
         android:columnOrderPreserved="false"
-        android:padding="8dp">
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:rowCount="3">
 
         <!-- linha 1, coluna 1 -->
         <android.support.v7.widget.CardView
+            android:id="@+id/mainGenre1"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:layout_marginBottom="10dp"
+            android:layout_columnWeight="1"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            app:cardElevation="8dp"
-            app:cardCornerRadius="8dp">
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
 
             <TextView
-                android:id="@+id/row1column1TextView"
+                android:id="@+id/mainGenreOption1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:drawableTop="@drawable/action"
                 android:gravity="center"
                 android:text="@string/genre_action"
-                android:textStyle="bold"
-                android:drawableTop="@drawable/action"/>
+                android:textStyle="bold" />
         </android.support.v7.widget.CardView>
 
         <!-- linha 1, coluna 2 -->
         <android.support.v7.widget.CardView
+            android:id="@+id/mainGenre2"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:layout_marginBottom="10dp"
+            android:layout_columnWeight="1"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            app:cardElevation="8dp"
-            app:cardCornerRadius="8dp">
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
 
             <TextView
-                android:id="@+id/row1column2TextView"
+                android:id="@+id/mainGenreOption2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:drawableTop="@drawable/adventure"
                 android:gravity="center"
                 android:text="@string/genre_adventure"
-                android:textStyle="bold"
-                android:drawableTop="@drawable/adventure"/>
+                android:textStyle="bold" />
         </android.support.v7.widget.CardView>
 
         <!-- linha 1, coluna 3 -->
         <android.support.v7.widget.CardView
+            android:id="@+id/mainGenre3"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:layout_marginBottom="10dp"
+            android:layout_columnWeight="1"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            app:cardElevation="8dp"
-            app:cardCornerRadius="8dp">
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
 
             <TextView
-                android:id="@+id/row1column3TextView"
+                android:id="@+id/mainGenreOption3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:drawableTop="@drawable/horror"
                 android:gravity="center"
                 android:text="@string/genre_horror"
-                android:textStyle="bold"
-                android:drawableTop="@drawable/horror"/>
+                android:textStyle="bold" />
         </android.support.v7.widget.CardView>
 
         <!-- linha 2, coluna 1 -->
         <android.support.v7.widget.CardView
+            android:id="@+id/mainGenre4"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:layout_marginBottom="10dp"
+            android:layout_columnWeight="1"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            app:cardElevation="8dp"
-            app:cardCornerRadius="8dp">
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
 
             <TextView
-                android:id="@+id/row2column1TextView"
+                android:id="@+id/mainGenreOption4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:drawableTop="@drawable/romantic"
                 android:gravity="center"
                 android:text="@string/genre_romance"
-                android:textStyle="bold"
-                android:drawableTop="@drawable/romantic"/>
+                android:textStyle="bold" />
         </android.support.v7.widget.CardView>
 
         <!-- linha 2, coluna 2 -->
         <android.support.v7.widget.CardView
+            android:id="@+id/mainGenre5"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:layout_marginBottom="10dp"
+            android:layout_columnWeight="1"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            app:cardElevation="8dp"
-            app:cardCornerRadius="8dp">
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
 
             <TextView
-                android:id="@+id/row2column2TextView"
+                android:id="@+id/mainGenreOption5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:drawableTop="@drawable/fantasy"
                 android:gravity="center"
                 android:text="@string/genre_fantasy"
-                android:textStyle="bold"
-                android:drawableTop="@drawable/fantasy"/>
+                android:textStyle="bold" />
         </android.support.v7.widget.CardView>
 
         <!-- linha 2, coluna 3 -->
         <android.support.v7.widget.CardView
+            android:id="@+id/mainGenre6"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:layout_marginBottom="10dp"
+            android:layout_columnWeight="1"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            app:cardElevation="8dp"
-            app:cardCornerRadius="8dp">
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
 
             <TextView
-                android:id="@+id/row2column3TextView"
+                android:id="@+id/mainGenreOption6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:drawableTop="@drawable/war"
                 android:gravity="center"
                 android:text="@string/genre_war"
-                android:textStyle="bold"
-                android:drawableTop="@drawable/war"/>
+                android:textStyle="bold" />
         </android.support.v7.widget.CardView>
 
         <!-- linha 3, coluna 1 -->
         <android.support.v7.widget.CardView
+            android:id="@+id/mainGenre7"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:layout_marginBottom="10dp"
+            android:layout_columnWeight="1"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            app:cardElevation="8dp"
-            app:cardCornerRadius="8dp">
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
 
             <TextView
-                android:id="@+id/row3column1TextView"
+                android:id="@+id/mainGenreOption7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:drawableTop="@drawable/detective"
                 android:gravity="center"
                 android:text="@string/genre_mistery"
-                android:textStyle="bold"
-                android:drawableTop="@drawable/detective"/>
+                android:textStyle="bold" />
         </android.support.v7.widget.CardView>
 
         <!-- linha 3, coluna 2 -->
         <android.support.v7.widget.CardView
+            android:id="@+id/seeMoreBotton"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:layout_marginBottom="10dp"
+            android:layout_columnWeight="1"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            app:cardElevation="8dp"
-            app:cardCornerRadius="8dp">
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
 
 
             <TextView
-                android:id="@+id/row3column2TextView"
+                android:id="@+id/SeeMoreOption"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

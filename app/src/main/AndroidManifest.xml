@@ -24,16 +24,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ListaFilmeActivity"
+            android:name=".MoviesList"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ListaGenerosActivity"
+            android:name=".Genres"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".DescricaoActivity"/>
+        <activity android:name=".MoviesDetails"/>
     </application>
 
 </manifest>

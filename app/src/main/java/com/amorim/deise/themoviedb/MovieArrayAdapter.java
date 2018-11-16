@@ -1,4 +1,4 @@
 package com.amorim.deise.themoviedb;
 
-public class FilmeArrayAdapter {
+public class MovieArrayAdapter {
 }

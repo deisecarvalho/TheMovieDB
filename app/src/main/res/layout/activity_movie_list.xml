@@ -4,18 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ListaFilmeActivity"
+    tools:context=".MoviesList"
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/apresentationMoviesTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/listgenretexsize"
         android:layout_margin="8dp"
-        android:text="TextView" />
+        android:text="@string/movies_by_genre"
+        android:textSize="@dimen/listgenretexsize" />
 
     <android.support.v7.widget.RecyclerView
+        android:id="@+id/moviesListView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>

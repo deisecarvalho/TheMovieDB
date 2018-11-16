@@ -3,11 +3,11 @@ package com.amorim.deise.themoviedb;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class DescricaoActivity extends AppCompatActivity {
+public class MoviesDetails extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_descricao);
+        setContentView(R.layout.activity_movie_details);
     }
 }

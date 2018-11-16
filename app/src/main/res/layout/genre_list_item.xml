@@ -8,7 +8,7 @@
         android:id="@+id/genreNameTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/listgenretexsize"
         android:layout_margin="8dp"
-        android:text="TextView" />
+        android:text="@string/genre"
+        android:textSize="@dimen/listgenretexsize" />
 </LinearLayout>

@@ -8,8 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-
 public class GenreArrayAdapter extends RecyclerView{
 
     public GenreArrayAdapter(@NonNull Context context) {
@@ -21,7 +19,7 @@ public class GenreArrayAdapter extends RecyclerView{
     }
 
     public View getView(int position, View convertView, ViewGroup parent){
-        ListaGenerosActivity genre = getItem(position);
+        Genres genre = getItem(position);
         ViewHolder viewHolder = null;
 
         if (convertView == null){

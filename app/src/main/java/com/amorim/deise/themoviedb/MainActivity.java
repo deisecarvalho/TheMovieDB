@@ -16,22 +16,28 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startListaGenero(View view) {
-        Intent ListaGenerosActivity = new Intent(this, ListaGenerosActivity.class);
+        Intent ListaGenerosActivity = new Intent(this, Genres.class);
         startActivity(ListaGenerosActivity);
     }
 
     public void startListaFilme(View view) {
-        Intent ListaFilmeActivity = new Intent(this, ListaFilmeActivity.class);
+        Intent ListaFilmeActivity = new Intent(this, MoviesList.class);
         startActivity(ListaFilmeActivity);
     }
 
 
 
-    private URL createURLGenre(Integer id){
+    private URL createURLAuthGuestSession(Integer id){
         try{
-            String apiKey = getString(R.string.api_key);
-            String baseURLGenre = getString(R.string.web_service_url_genres);
-            String urlString = baseURLGenre + "?api_key=" + apiKey
+           String apikey = getString(R.string.api_key);
+           String baseURL = getString(R.string.web_service_url_auth_guest_session);
+           String urlString = baseURL + apikey;
+
+           return new URL(urlString);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+            return null;
         }
     }
 }
