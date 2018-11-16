@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wellcomemessage">Bienvenido</string>
+    <string name="textgenreone">Aquí puedes leer la sinopsis de tus películas favoritas. Elige un género</string>
+    <string name="genre_action">Acción</string>
+    <string name="genre_adventure">Aventuras</string>
+    <string name="genre_horror">Horror</string>
+    <string name="genre_romance">Romance</string>
+    <string name="genre_fantasy">Fantasía</string>
+    <string name="genre_war">Guerra</string>
+    <string name="genre_mistery">Misterio</string>
+    <string name="more">Ver más</string>
+    <string name="textgenretwo">Elige un género</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="api_key" translatable="false">3d300a0230a2d4a14ee863b22e2ea788</string>
+    <string name="web_service_url_movies" translatable="false">https://api.themoviedb.org/3/discover/movie?with_genres=</string>
+    <string name="web_service_url_genres" translatable="false">https://api.themoviedb.org/3/genre/movie/list</string>
+    <string name="sort_popularity" translatable="false">sort_by=popularity.asc</string>
+</resources>

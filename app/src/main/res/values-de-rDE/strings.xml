@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wellcomemessage">Herzlich Willkommen</string>
+    <string name="textgenreone">Hier können Sie die Zusammenfassung Ihrer Lieblingsfilme lesen. Wähle ein Genre</string>
+    <string name="genre_action">Aktion</string>
+    <string name="genre_adventure">Abenteuer</string>
+    <string name="genre_horror">Grusel</string>
+    <string name="genre_romance">Romantik</string>
+    <string name="genre_fantasy">Fantasie</string>
+    <string name="genre_war">Krieg</string>
+    <string name="genre_mistery">Mistery</string>
+    <string name="more">Mehr sehen</string>
+    <string name="textgenretwo">Wähle ein Genre</string>
+</resources>

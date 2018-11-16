@@ -24,12 +24,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:paddingLeft="@dimen/paddingleftright_passos"
-        android:paddingTop="@dimen/paddingtopbotton_passos"
-        android:paddingRight="@dimen/paddingleftright_passos"
-        android:paddingBottom="@dimen/paddingtopbotton_passos"
-        android:text="@string/passoum"
-        android:textSize="@dimen/textopassos"/>
+        android:paddingLeft="@dimen/paddingleftright"
+        android:paddingTop="@dimen/paddingtopbotton"
+        android:paddingRight="@dimen/paddingleftright"
+        android:paddingBottom="@dimen/paddingtopbotton"
+        android:text="@string/textgenreone"
+        android:textSize="@dimen/fixedtextSize"/>
 
     <GridLayout
         android:orientation="horizontal"
@@ -54,33 +54,15 @@
             app:cardElevation="8dp"
             app:cardCornerRadius="8dp">
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/row1column1TextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:layout_margin="16dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/row1column1ImageView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:contentDescription="@string/genre_action"
-                    android:src="@drawable/action" />
-
-                <TextView
-                    android:id="@+id/row1column1TextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:autoSizeMaxTextSize="20sp"
-                    android:autoSizeMinTextSize="12sp"
-                    android:autoSizeStepGranularity="2sp"
-                    android:autoSizeTextType="uniform"
-                    android:text="@string/genre_action"
-                    android:textStyle="bold" />
-            </LinearLayout>
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/genre_action"
+                android:textStyle="bold"
+                android:drawableTop="@drawable/action"/>
         </android.support.v7.widget.CardView>
 
         <!-- linha 1, coluna 2 -->
@@ -95,33 +77,15 @@
             app:cardElevation="8dp"
             app:cardCornerRadius="8dp">
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/row1column2TextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:layout_margin="16dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/row1column2ImageView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:contentDescription="@string/genre_adventure"
-                    android:src="@drawable/adventure"></ImageView>
-
-                <TextView
-                    android:id="@+id/row1column2TextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:autoSizeMaxTextSize="20sp"
-                    android:autoSizeMinTextSize="12sp"
-                    android:autoSizeStepGranularity="2sp"
-                    android:autoSizeTextType="uniform"
-                    android:text="@string/genre_adventure"
-                    android:textStyle="bold"></TextView>
-            </LinearLayout>
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/genre_adventure"
+                android:textStyle="bold"
+                android:drawableTop="@drawable/adventure"/>
         </android.support.v7.widget.CardView>
 
         <!-- linha 1, coluna 3 -->
@@ -136,33 +100,15 @@
             app:cardElevation="8dp"
             app:cardCornerRadius="8dp">
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/row1column3TextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:layout_margin="16dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/row1column3ImageView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:contentDescription="@string/genre_horror"
-                    android:src="@drawable/horror"></ImageView>
-
-                <TextView
-                    android:id="@+id/row1column3TextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:autoSizeMaxTextSize="20sp"
-                    android:autoSizeMinTextSize="12sp"
-                    android:autoSizeStepGranularity="2sp"
-                    android:autoSizeTextType="uniform"
-                    android:text="@string/genre_horror"
-                    android:textStyle="bold"></TextView>
-            </LinearLayout>
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/genre_horror"
+                android:textStyle="bold"
+                android:drawableTop="@drawable/horror"/>
         </android.support.v7.widget.CardView>
 
         <!-- linha 2, coluna 1 -->
@@ -177,33 +123,15 @@
             app:cardElevation="8dp"
             app:cardCornerRadius="8dp">
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/row2column1TextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:layout_margin="16dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/row2column1ImageView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:contentDescription="@string/genre_romatic"
-                    android:src="@drawable/romantic"></ImageView>
-
-                <TextView
-                    android:id="@+id/row2column1TextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:autoSizeMaxTextSize="20sp"
-                    android:autoSizeMinTextSize="12sp"
-                    android:autoSizeStepGranularity="2sp"
-                    android:autoSizeTextType="uniform"
-                    android:text="@string/genre_romatic"
-                    android:textStyle="bold"></TextView>
-            </LinearLayout>
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/genre_romance"
+                android:textStyle="bold"
+                android:drawableTop="@drawable/romantic"/>
         </android.support.v7.widget.CardView>
 
         <!-- linha 2, coluna 2 -->
@@ -218,33 +146,15 @@
             app:cardElevation="8dp"
             app:cardCornerRadius="8dp">
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/row2column2TextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:layout_margin="16dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/row2column2ImageView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:contentDescription="@string/genre_fantasy"
-                    android:src="@drawable/fantasy"></ImageView>
-
-                <TextView
-                    android:id="@+id/row2column2TextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:autoSizeMaxTextSize="20sp"
-                    android:autoSizeMinTextSize="12sp"
-                    android:autoSizeStepGranularity="2sp"
-                    android:autoSizeTextType="uniform"
-                    android:text="@string/genre_fantasy"
-                    android:textStyle="bold"></TextView>
-            </LinearLayout>
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/genre_fantasy"
+                android:textStyle="bold"
+                android:drawableTop="@drawable/fantasy"/>
         </android.support.v7.widget.CardView>
 
         <!-- linha 2, coluna 3 -->
@@ -259,33 +169,15 @@
             app:cardElevation="8dp"
             app:cardCornerRadius="8dp">
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/row2column3TextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:layout_margin="16dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/row2column3ImageView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:contentDescription="@string/genre_war"
-                    android:src="@drawable/war"></ImageView>
-
-                <TextView
-                    android:id="@+id/row2column3TextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:autoSizeMaxTextSize="20sp"
-                    android:autoSizeMinTextSize="12sp"
-                    android:autoSizeStepGranularity="2sp"
-                    android:autoSizeTextType="uniform"
-                    android:text="@string/genre_war"
-                    android:textStyle="bold"></TextView>
-            </LinearLayout>
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/genre_war"
+                android:textStyle="bold"
+                android:drawableTop="@drawable/war"/>
         </android.support.v7.widget.CardView>
 
         <!-- linha 3, coluna 1 -->
@@ -300,33 +192,15 @@
             app:cardElevation="8dp"
             app:cardCornerRadius="8dp">
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/row3column1TextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:layout_margin="16dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/row3column1ImageView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:contentDescription="@string/genre_detective"
-                    android:src="@drawable/detective"></ImageView>
-
-                <TextView
-                    android:id="@+id/row3column1TextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:autoSizeMaxTextSize="20sp"
-                    android:autoSizeMinTextSize="12sp"
-                    android:autoSizeStepGranularity="2sp"
-                    android:autoSizeTextType="uniform"
-                    android:text="@string/genre_detective"
-                    android:textStyle="bold"></TextView>
-            </LinearLayout>
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/genre_mistery"
+                android:textStyle="bold"
+                android:drawableTop="@drawable/detective"/>
         </android.support.v7.widget.CardView>
 
         <!-- linha 3, coluna 2 -->
@@ -341,26 +215,17 @@
             app:cardElevation="8dp"
             app:cardCornerRadius="8dp">
 
-            <LinearLayout
+
+            <TextView
+                android:id="@+id/row3column2TextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:layout_margin="16dp"
-                android:orientation="vertical">
+                android:layout_gravity="center"
+                android:contentDescription="@string/more"
+                android:text="@string/more"
+                android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/row3column2TextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:autoSizeMaxTextSize="20sp"
-                    android:autoSizeMinTextSize="12sp"
-                    android:autoSizeStepGranularity="2sp"
-                    android:autoSizeTextType="uniform"
-                    android:contentDescription="@string/more"
-                    android:text="@string/more"
-                    android:textStyle="bold" />
-            </LinearLayout>
+
         </android.support.v7.widget.CardView>
     </GridLayout>
 

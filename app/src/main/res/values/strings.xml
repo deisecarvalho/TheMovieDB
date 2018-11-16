@@ -1,13 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">TheMovieDB</string>
+    <string name="app_name" translatable="false">The Movie DB</string>
     <string name="wellcomemessage">Wellcome</string>
-    <string name="passoum">Here you can read the synopsis of your favorite movies. Choose a genre</string>
-    <string name="more">See More</string>
+    <string name="textgenreone">Here you can read the synopsis of your favorite movies. Choose a genre</string>
     <string name="genre_action">Action</string>
     <string name="genre_adventure">Adventure</string>
     <string name="genre_horror">Horror</string>
-    <string name="genre_romatic">Romantic</string>
+    <string name="genre_romance">Romance</string>
     <string name="genre_fantasy">Fantasy</string>
     <string name="genre_war">War</string>
-    <string name="genre_detective">Detective</string>
+    <string name="genre_mistery">Mystery</string>
+    <string name="more">See more</string>
+    <string name="textgenretwo">Choose a genre</string>
 </resources>

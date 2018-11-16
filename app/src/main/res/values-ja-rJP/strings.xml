@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wellcomemessage">ウェルカム</string>
+    <string name="textgenreone">ここであなたの好きな映画の概要を読むことができます。 ジャンルを選択</string>
+    <string name="genre_action">アクション</string>
+    <string name="genre_adventure">冒険</string>
+    <string name="genre_horror">ホラー</string>
+    <string name="genre_romance">ロマンス</string>
+    <string name="genre_fantasy">ファンタジー</string>
+    <string name="genre_war">戦争</string>
+    <string name="genre_mistery">ミステリー</string>
+    <string name="more">続きを見る</string>
+    <string name="textgenretwo">ジャンルを選択</string>
+</resources>
