@@ -11,14 +11,12 @@
     <string name="genre_mistery">Misterio</string>
     <string name="more">Ver más</string>
     <string name="textgenretwo">Elige un género</string>
-    <string name="genre">%s</string>
-    <string name="overview">%s</string>
     <string name="overviewtitle">Visión general</string>
     <string name="runtime">Duración: %s</string>
     <string name="movies_by_genre">Lista de películas de género %s</string>
-    <string name="title">Título: %s</string>
+    <string name="movietitle">Título: %s</string>
     <string name="original_title">Titulo original: %s (%s)</string>
     <string name="release_date">Fecha de lanzamiento: %s</string>
-    <string name="poster_movie_contentDescription">cartel de la película %s</string>
-    <string name="backdrop_movie_ContentDescription">Paisaje %s</string>
+    <string name="poster_movie_contentDescription">Cartel de la película</string>
+    <string name="backdrop_movie_ContentDescription">Paisaje de la película</string>
 </resources>

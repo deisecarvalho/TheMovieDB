@@ -33,9 +33,10 @@
             android:layout_columnWeight="1"
             android:layout_marginStart="@dimen/paddingleftright"
             android:layout_marginEnd="@dimen/paddingleftright"
-            android:text="@string/title" />
+            android:text="@string/movietitle" />
 
         <TextView
+            android:id="@+id/movieTitleTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_row="1"

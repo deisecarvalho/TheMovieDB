@@ -8,34 +8,52 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class GenreArrayAdapter extends RecyclerView{
+import com.squareup.picasso.Picasso;
 
-    public GenreArrayAdapter(@NonNull Context context) {
-        super(context);
+import java.util.ArrayList;
+import java.util.List;
+
+public class GenreArrayAdapter extends RecyclerView.Adapter<GenreArrayAdapter.GenreViewHolder>{
+    private ArrayList<String> gGenresList;
+    private LayoutInflater gInflater;
+    private Context gContext;
+
+    public GenreArrayAdapter(Context context){
+        this.gContext = context;
+        this.gInflater = LayoutInflater.from(context);
+        this.gGenresList = new ArrayList<>();
     }
 
-    private static class ViewHolder{
-        TextView genreNameTextView;
+    @NonNull
+    @Override
+    public GenreViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+        View view = gInflater.inflate(R.layout.genre_list_item, viewGroup,false);
+        GenreViewHolder viewHolder = new GenreViewHolder(view);
+        return viewHolder;
     }
 
-    public View getView(int position, View convertView, ViewGroup parent){
-        Genres genre = getItem(position);
-        ViewHolder viewHolder = null;
+    @Override
+    public void onBindViewHolder(@NonNull GenreViewHolder genreViewHolder, int i) {
+        genreViewHolder.textView.setText((CharSequence) gGenresList.get(i));
+    }
 
-        if (convertView == null){
-            viewHolder = new ViewHolder();
-            LayoutInflater inflater = LayoutInflater.from(getContext());
-            convertView = inflater.inflate(R.layout.genre_list_item, parent false);
-            viewHolder.genreNameTextView = (TextView) convertView.findViewById(R.id.genreNameTextView);
+    @Override
+    public int getItemCount() {
+        return (gGenresList == null) ? 0 : gGenresList.size();
+    }
+
+    public static class GenreViewHolder extends RecyclerView.ViewHolder{
+        public TextView textView;
+        public GenreViewHolder(View view){
+            super(view);
+            textView = (TextView) view.findViewById(R.id.genreNameTextView);
         }
-        else{
-            viewHolder = (ViewHolder)convertView.getTag();
-        }
 
-        Context context = getContext();
+    }
 
-        viewHolder.genreNameTextView.setText(context.getString(R.string.name, genre.name));
-
-        return convertView;
+    public void swapGenreList(ArrayList<String> genrelist){
+        this.gGenresList.clear();
+        this.gGenresList.addAll(genrelist);
+        notifyDataSetChanged();
     }
 }
