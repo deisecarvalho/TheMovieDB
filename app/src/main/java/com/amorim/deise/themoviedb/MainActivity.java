@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+
 public class MainActivity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,6 +16,5 @@ public class MainActivity extends AppCompatActivity {
     public void startGenreActivity(View view){
       Intent intent = new Intent(this, Genres.class);
       startActivity(intent);
-  }
-
+    }
 }

@@ -8,20 +8,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.squareup.picasso.Picasso;
-
-import java.util.ArrayList;
 import java.util.List;
 
 public class GenreArrayAdapter extends RecyclerView.Adapter<GenreArrayAdapter.GenreViewHolder>{
-    private ArrayList<String> gGenresList;
     private LayoutInflater gInflater;
+    private List<Genre> genre;
     private Context gContext;
 
-    public GenreArrayAdapter(Context context){
+    public GenreArrayAdapter(Context context, List<Genre> genre){
         this.gContext = context;
         this.gInflater = LayoutInflater.from(context);
-        this.gGenresList = new ArrayList<>();
+        this.genre = genre;
     }
 
     @NonNull
@@ -34,26 +31,27 @@ public class GenreArrayAdapter extends RecyclerView.Adapter<GenreArrayAdapter.Ge
 
     @Override
     public void onBindViewHolder(@NonNull GenreViewHolder genreViewHolder, int i) {
-        genreViewHolder.textView.setText((CharSequence) gGenresList.get(i));
-    }
+        Genre genre_ = genre.get(i);
 
+        genreViewHolder.textView.setText(genre_.name);
+
+    }
     @Override
     public int getItemCount() {
-        return (gGenresList == null) ? 0 : gGenresList.size();
+        return (genre == null) ? 0 : genre.size();
     }
 
     public static class GenreViewHolder extends RecyclerView.ViewHolder{
         public TextView textView;
         public GenreViewHolder(View view){
             super(view);
-            textView = (TextView) view.findViewById(R.id.genreNameTextView);
+            textView = view.findViewById(R.id.genreNameTextView);
         }
-
     }
 
-    public void swapGenreList(ArrayList<String> genrelist){
-        this.gGenresList.clear();
-        this.gGenresList.addAll(genrelist);
+    public void swapGenreList(List<Genre> genrelist){
+        this.genre.clear();
+        this.genre.addAll(genrelist);
         notifyDataSetChanged();
     }
 }

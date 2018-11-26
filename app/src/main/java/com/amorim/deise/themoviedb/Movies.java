@@ -3,20 +3,37 @@ package com.amorim.deise.themoviedb;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+
+import com.google.gson.annotations.SerializedName;
 
 public class Movies extends AppCompatActivity{
     private RecyclerView mMoviesRecyclerView;
-    private String mTitle;
-    private String mOriginalTitle;
-    private String mReleaseDate;
-    private String mRuntime;
+    @SerializedName("id") private int mGenreId;
+    @SerializedName("name") private String mGenreName;
+    @SerializedName("title") private String mTitle;
+    @SerializedName("original_title") private String mOriginalTitle;
+    @SerializedName("release_date") private String mReleaseDate;
+    @SerializedName("poster_path") private String mPoster;
+    private MovieArrayAdapter mAdapter;
 
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movie_list);
+
+        mMoviesRecyclerView = findViewById(R.id.movieRecyclerView);
+
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(
+                this,
+                LinearLayoutManager.VERTICAL,
+                false);
+
+        mAdapter = new MovieArrayAdapter(this);
+        mMoviesRecyclerView.setLayoutManager(linearLayoutManager);
+        mMoviesRecyclerView.setAdapter(mAdapter);
     }
 
 
@@ -26,6 +43,8 @@ public class Movies extends AppCompatActivity{
     public void setmOriginalTitle(String mOriginalTitle){this.mOriginalTitle = mOriginalTitle;}
     public String getmReleaseDate(){return mReleaseDate;}
     public void setmReleaseDate(String mReleaseDate){this.mReleaseDate = mReleaseDate;}
-    public String getmRuntime(){return mRuntime;}
-    public void setmRuntime(String mRuntime){this.mRuntime = mRuntime;}
+    public String getmPoster(){
+
+        return "https://api.themoviedb.org/3/movie/200/images?api_key=3d300a0230a2d4a14ee863b22e2ea788&language=en-US";}
+    public void setmPoster(String mPoster){this.mPoster = mPoster;}
 }

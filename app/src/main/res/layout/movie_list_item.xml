@@ -25,7 +25,7 @@
         android:useDefaultMargins="true">
 
         <TextView
-            android:id="@+id/originalMovieTitleTextView"
+            android:id="@+id/movieOriginalTitleTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_row="0"
@@ -47,7 +47,7 @@
 
 
         <TextView
-            android:id="@+id/releaseDateTextView"
+            android:id="@+id/movieReleaseDateTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_row="2"

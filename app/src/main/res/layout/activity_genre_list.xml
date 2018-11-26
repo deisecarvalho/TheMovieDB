@@ -16,7 +16,7 @@
         android:paddingRight="@dimen/paddingleftright"
         android:paddingBottom="@dimen/paddingtopbotton"
         android:text="@string/textgenretwo"
-        android:textSize="@dimen/fixedtextSize" />
+        android:textSize="@dimen/fixedtextSize"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/genreRecyclerView"
