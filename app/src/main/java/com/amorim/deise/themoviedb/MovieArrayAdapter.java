@@ -12,21 +12,22 @@ import android.widget.TextView;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MovieArrayAdapter extends RecyclerView.Adapter<MovieArrayAdapter.MovieViewHolder> {
-    private ArrayList<Movies> mMoviesList;
+    private List<Movie> movie;
     private LayoutInflater mInflater;
     private Context mContext;
 
-    public MovieArrayAdapter(Context context) {
+    public MovieArrayAdapter(Context context, List<Movie> movie) {
         this.mContext = context;
         this.mInflater = LayoutInflater.from(context);
-        this.mMoviesList = new ArrayList<>();
+        this.movie = movie;
     }
 
     @NonNull
     @Override
-    public MovieArrayAdapter.MovieViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+    public MovieViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         View view = mInflater.inflate(R.layout.movie_list_item, viewGroup, false);
         MovieViewHolder viewHolder = new MovieViewHolder(view);
         return viewHolder;
@@ -34,19 +35,20 @@ public class MovieArrayAdapter extends RecyclerView.Adapter<MovieArrayAdapter.Mo
 
     @Override
     public void onBindViewHolder(@NonNull MovieViewHolder movieViewHolder, int i) {
-        Movies movie = mMoviesList.get(i);
+        Movie movie_ = movie.get(i);
 
-        movie.getmOriginalTitle();
-        movie.getmTitle();
-        movie.getmReleaseDate();
+        movieViewHolder.mTitle.setText(movie_.title);
+        movieViewHolder.mOriginalTitle.setText(movie_.original_title);
+        movieViewHolder.mReleaseDate.setText(movie_.release_date);
 
-        Picasso.get().load(movie.getmPoster()).into(movieViewHolder.mPoster);
+
+        Picasso.get().load(movie_.poster_path).into(movieViewHolder.mPoster);
 
     }
 
     @Override
     public int getItemCount() {
-        return (mMoviesList == null) ? 0 : mMoviesList.size();
+        return (movie == null) ? 0 : movie.size();
     }
 
     public static class MovieViewHolder extends RecyclerView.ViewHolder{
@@ -65,9 +67,9 @@ public class MovieArrayAdapter extends RecyclerView.Adapter<MovieArrayAdapter.Mo
         }
     }
 
-    public void swapMovieList(ArrayList<Movies> movieslist){
-        this.mMoviesList.clear();
-        this.mMoviesList.addAll(movieslist);
+    public void swapMovieList(ArrayList<Movie> movieslist){
+        this.movie.clear();
+        this.movie.addAll(movieslist);
         notifyDataSetChanged();
     }
 }

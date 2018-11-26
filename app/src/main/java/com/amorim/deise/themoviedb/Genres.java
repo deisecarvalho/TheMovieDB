@@ -1,11 +1,13 @@
 package com.amorim.deise.themoviedb;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import com.google.gson.Gson;
 
@@ -35,6 +37,10 @@ public class Genres extends AppCompatActivity{
 
         WebServiceClient client = new WebServiceClient();
         client.execute(createURL());
+    }
+    public void startMoviesActivity(View view){
+        Intent intent = new Intent(this, Movies.class);
+        startActivity(intent);
     }
 
     private class WebServiceClient extends AsyncTask<String, Void, String> {
@@ -81,7 +87,7 @@ public class Genres extends AppCompatActivity{
 
         try{
             String genresURL = endpoint + getGenre + "?api_key=" + apikey + "&language=" + languageDevice;
-            return (genresURL);
+            return genresURL;
         }
         catch (Exception e){e.printStackTrace(); return null;}
     }

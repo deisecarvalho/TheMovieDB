@@ -10,5 +10,6 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:text="@string/genre"
-        android:textSize="@dimen/listgenretexsize" />
+        android:textSize="@dimen/listgenretexsize"
+        android:onClick="startMoviesActivity"/>
 </LinearLayout>
