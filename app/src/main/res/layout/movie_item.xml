@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MovieDataDetails"
     android:orientation="vertical">
 
 
@@ -20,7 +19,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/moviePosterImageView"
+            android:id="@+id/posterImageView"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginStart="@dimen/paddingleftright"
@@ -38,24 +37,15 @@
             android:rowCount="4"
             android:useDefaultMargins="true">
 
+
             <TextView
-                android:id="@+id/originalMovieTitleTextView"
+                android:id="@+id/titleTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_row="0"
                 android:layout_columnWeight="1"
                 android:layout_marginStart="@dimen/paddingleftright"
                 android:text="@string/movietitle" />
-
-            <TextView
-                android:id="@+id/releaseDateTextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_row="1"
-                android:layout_columnWeight="1"
-                android:layout_marginStart="@dimen/paddingleftright"
-                android:layout_marginEnd="@dimen/paddingleftright"
-                android:text="@string/release_date" />
 
             <TextView
                 android:id="@+id/originalTitleTextView"
@@ -68,7 +58,18 @@
                 android:text="@string/original_title" />
 
             <TextView
-                android:id="@+id/runTimeTextView"
+                android:id="@+id/releaseDateTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="@dimen/paddingleftright"
+                android:layout_marginEnd="@dimen/paddingleftright"
+                android:text="@string/release_date" />
+
+
+            <TextView
+                android:id="@+id/runtimeTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_row="3"
@@ -76,6 +77,12 @@
                 android:layout_marginStart="@dimen/paddingleftright"
                 android:layout_marginEnd="@dimen/paddingleftright"
                 android:text="@string/runtime" />
+
+            <TextView
+                android:id="@+id/movieDetalheId"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="invisible"/>
         </GridLayout>
 
     </LinearLayout>

@@ -8,9 +8,7 @@ public class GenreData {
     public List<GenreDataDetails> getList(){
         return genres;
     }
-
     public void setList(List<GenreDataDetails> genres){
         this.genres = genres;
     }
-
 }

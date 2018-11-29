@@ -2,15 +2,15 @@ package com.amorim.deise.themoviedb;
 
 public class Genre {
     public final String name;
-    public final int id;
+    public final String id;
 
-    public Genre(int id, String name){
+    public Genre(String id, String name){
         this.id = id;
         this.name = name;
     }
 
-    public Genre(GenreDataDetails data){
-        this.id = data.getGenreId();
+    Genre(GenreDataDetails data){
+        this.id = String.valueOf(data.getGenreId());
         this.name = data.getGenreName();
     }
 

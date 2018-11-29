@@ -1,6 +1,7 @@
 package com.amorim.deise.themoviedb;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -18,10 +19,8 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
 public class Genres extends AppCompatActivity{
-    private RecyclerView gGenresRecyclerView;
     private GenreArrayAdapter gAdapter;
     private List<Genre> genreList;
 
@@ -29,7 +28,7 @@ public class Genres extends AppCompatActivity{
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_genre_list);
-        gGenresRecyclerView = findViewById(R.id.genreRecyclerView);
+        RecyclerView gGenresRecyclerView = findViewById(R.id.genreRecyclerView);
         genreList = new ArrayList<>();
         gAdapter = new GenreArrayAdapter(this,genreList );
         gGenresRecyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -38,10 +37,8 @@ public class Genres extends AppCompatActivity{
         WebServiceClient client = new WebServiceClient();
         client.execute(createURL());
     }
-    public void startMoviesActivity(View view){
-        Intent intent = new Intent(this, Movies.class);
-        startActivity(intent);
-    }
+
+
 
     private class WebServiceClient extends AsyncTask<String, Void, String> {
 
@@ -53,7 +50,7 @@ public class Genres extends AppCompatActivity{
                 InputStream stream = connection.getInputStream();
                 BufferedReader reader = new BufferedReader(new InputStreamReader(stream));
                 String line;
-                StringBuilder stringBuilder = new StringBuilder ("");
+                StringBuilder stringBuilder = new StringBuilder ();
                 while ((line = reader.readLine()) != null){
                     stringBuilder.append(line);
                 }
@@ -82,13 +79,16 @@ public class Genres extends AppCompatActivity{
     private String createURL(){
         String apikey = getString(R.string.api_key);
         String endpoint = getString(R.string.api_endpoint);
-        String languageDevice = Locale.getDefault().getDisplayLanguage();
+        String languageDevice = Resources.getSystem().getConfiguration().getLocales().toLanguageTags();
         String getGenre = getString(R.string.web_service_url_genres);
 
         try{
-            String genresURL = endpoint + getGenre + "?api_key=" + apikey + "&language=" + languageDevice;
-            return genresURL;
+            return endpoint + getGenre + "?api_key=" + apikey + "&language=" + languageDevice;
         }
         catch (Exception e){e.printStackTrace(); return null;}
+    }
+    public void startDiscoverActivity(View view){
+        Intent intent = new Intent(this, Discover.class);
+        startActivity(intent);
     }
 }

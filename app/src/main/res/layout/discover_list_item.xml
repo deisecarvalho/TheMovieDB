@@ -3,10 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:layout_marginBottom="8dp">
 
     <ImageView
-        android:id="@+id/moviePosterImageView"
+        android:id="@+id/posterImageView"
         android:layout_width="@dimen/image_side_length"
         android:layout_height="match_parent"
         android:layout_marginStart="@dimen/paddingleftright"
@@ -25,17 +26,6 @@
         android:useDefaultMargins="true">
 
         <TextView
-            android:id="@+id/movieOriginalTitleTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_columnSpan="2"
-            android:layout_columnWeight="1"
-            android:layout_marginStart="@dimen/paddingleftright"
-            android:layout_marginEnd="@dimen/paddingleftright"
-            android:text="@string/movietitle" />
-
-        <TextView
             android:id="@+id/movieTitleTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -43,7 +33,18 @@
             android:layout_columnWeight="1"
             android:layout_marginStart="@dimen/paddingleftright"
             android:layout_marginEnd="@dimen/paddingleftright"
-            android:text="@string/original_title" />
+            android:text="@string/movietitle" />
+
+        <TextView
+        android:id="@+id/movieOriginalTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_columnSpan="2"
+        android:layout_columnWeight="1"
+        android:layout_marginStart="@dimen/paddingleftright"
+        android:layout_marginEnd="@dimen/paddingleftright"
+        android:text="@string/original_title" />
 
 
         <TextView
@@ -56,6 +57,13 @@
             android:layout_marginStart="@dimen/paddingleftright"
             android:layout_marginEnd="@dimen/paddingleftright"
             android:text="@string/release_date" />
+
+        <TextView
+            android:id="@+id/movieId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/original_title"
+            android:visibility="invisible"/>
 
 
     </GridLayout>

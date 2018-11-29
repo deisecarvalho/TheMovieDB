@@ -1,42 +1,44 @@
 package com.amorim.deise.themoviedb;
 
-import java.util.List;
-
 public class Movie {
+    public final String mPoster;
+    public final String mBackdrop;
+    public final String mTitle;
+    public final String mOriginalTitle;
+    public final String mOverview;
+    public final String mRuntime;
+    public final String mReleaseDate;
+    public final String mId;
+   // public final String genreId;
+    //public final String genreName;
 
-    public final int id;
-    public final int runtime;
-    public final String title;
-    public final String original_title;
-    public final String overview;
-    public final String release_date;
-    public final String backdrop_path;
-    public final String poster_path;
-    public final List<GenreDataDetails> genres;
 
 
-    public Movie(int id, String title, String original_title, String overview, String release_date, List<GenreDataDetails> genres, String backdrop_path, String poster_path, int runtime) {
-        this.id = id;
-        this.title = title;
-        this.original_title = original_title;
-        this.overview = overview;
-        this.release_date = release_date;
-        this.genres = genres;
-        this.backdrop_path = backdrop_path;
-        this.poster_path = poster_path;
-        this.runtime = runtime;
+    public Movie(String mPoster, String mBackdrop, String mTitle, String mOriginalTitle, String mOverview, String mRuntime, String mReleaseDate, String mId, String genreId, String genreName) {
+        this.mPoster = mPoster;
+        this.mBackdrop = mBackdrop;
+        this.mTitle = mTitle;
+        this.mOriginalTitle = mOriginalTitle;
+        this.mOverview = mOverview;
+        this.mRuntime = mRuntime;
+        this.mReleaseDate = mReleaseDate;
+        this.mId = mId;
+        //this.genreId = genreId;
+       // this.genreName = genreName;
     }
 
     public Movie(MovieData data){
-        this.id = data.getMovieId();
-        this.title = data.getMovieTitle();
-        this.original_title = data.getMovieOriginalTitle();
-        this.overview = data.getMovieOverview();
-        this.release_date = data.getMovieReleaseDate();
-        this.backdrop_path = data.getMovieBackdropPath();
-        this.poster_path = data.getMoviePosterPath();
-        this.runtime = data.getMovieRuntime();
-        this.genres = data.getList();
+        this.mId = String.valueOf(data.getmId());
+        this.mOriginalTitle = data.getmOriginalTitle();
+        this.mBackdrop = data.getmBackdrop();
+        this.mPoster = data.getmPoster();
+        this.mTitle = data.getmTitle();
+        this.mRuntime = String.valueOf(data.getmRuntime());
+        this.mReleaseDate = data.getmReleaseDate();
+        this.mOverview = data.getmOverview();
+        //this.genreId = String.valueOf(data.getList());
+        //this.genreName = data.getList().;
+
     }
 
 }

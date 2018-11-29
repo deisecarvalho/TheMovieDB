@@ -15,11 +15,12 @@
     <string name="movietitle">Title: %s</string>
     <string name="original_title">Original Title: %s</string>
     <string name="release_date">Release Date: %s</string>
-    <string name="poster_movie_contentDescription">movie poster</string>
+    <string name="poster_movie_contentDescription">mDiscover poster</string>
     <string name="genre" translatable="false">%s</string>
     <string name="movies_by_genre">Movie list of genre %s</string>
-    <string name="backdrop_movie_ContentDescription">movie backdrop</string>
+    <string name="backdrop_movie_ContentDescription">mDiscover backdrop</string>
     <string name="overview" translatable="false">%s</string>
     <string name="runtime">Runtime: %s</string>
     <string name="overviewtitle">Overview</string>
+    <string name="genreId" translatable="false">id</string>
 </resources>
