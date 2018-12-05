@@ -1,6 +1,5 @@
 package com.amorim.deise.themoviedb;
 
-import android.content.Intent;
 import android.content.res.Resources;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -8,7 +7,6 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
 
 import com.google.gson.Gson;
 
@@ -20,7 +18,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Genres extends AppCompatActivity{
+public class Main_Genre extends AppCompatActivity{
     private GenreArrayAdapter gAdapter;
     private List<Genre> genreList;
 
@@ -38,9 +36,7 @@ public class Genres extends AppCompatActivity{
         client.execute(createURL());
     }
 
-
-
-    private class WebServiceClient extends AsyncTask<String, Void, String> {
+     private class WebServiceClient extends AsyncTask<String, Void, String> {
 
         @Override
         protected String doInBackground(String... URLString) {
@@ -79,16 +75,12 @@ public class Genres extends AppCompatActivity{
     private String createURL(){
         String apikey = getString(R.string.api_key);
         String endpoint = getString(R.string.api_endpoint);
-        String languageDevice = Resources.getSystem().getConfiguration().getLocales().toLanguageTags();
+        String languageDevice = Resources.getSystem().getConfiguration().getLocales().toLanguageTags().substring(0,5);
         String getGenre = getString(R.string.web_service_url_genres);
 
         try{
             return endpoint + getGenre + "?api_key=" + apikey + "&language=" + languageDevice;
         }
         catch (Exception e){e.printStackTrace(); return null;}
-    }
-    public void startDiscoverActivity(View view){
-        Intent intent = new Intent(this, Discover.class);
-        startActivity(intent);
     }
 }

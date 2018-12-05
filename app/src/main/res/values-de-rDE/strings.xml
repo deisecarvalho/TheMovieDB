@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="wellcomemessage">Herzlich Willkommen</string>
-    <string name="textgenreone">Hier können Sie die Zusammenfassung Ihrer Lieblingsfilme lesen. Wähle ein Genre</string>
-    <string name="genre_action">Aktion</string>
+    <string name="apresentationMessage">Hier können Sie die Zusammenfassung Ihrer Lieblingsfilme lesen. Wähle ein Genre</string>
+    <string name="genre_action">Action</string>
     <string name="genre_adventure">Abenteuer</string>
-    <string name="genre_horror">Grusel</string>
-    <string name="genre_romance">Romantik</string>
-    <string name="genre_fantasy">Fantasie</string>
-    <string name="genre_war">Krieg</string>
+    <string name="genre_horror">Horror</string>
+    <string name="genre_romance">Liebesfilm</string>
+    <string name="genre_fantasy">Fantasy</string>
+    <string name="genre_war">Kriegsfilm</string>
     <string name="genre_mistery">Mistery</string>
     <string name="more">Mehr sehen</string>
-    <string name="textgenretwo">Wähle ein Genre</string>
-    <string name="overviewtitle">Überblick</string>
-    <string name="runtime">Lebensdauer: %s</string>
-    <string name="movies_by_genre">Filmliste des Genres %s</string>
-    <string name="movietitle">Titel: %s</string>
-    <string name="original_title">Originaler titel: %s (%s)</string>
-    <string name="release_date">Veröffentlichungsdatum: %s</string>
+    <string name="selectGenreMessage">Wähle ein Genre</string>
+    <string name="overviewLabel">Überblick</string>
+    <string name="runtime">Lebensdauer:</string>
+    <string name="selectMovieMessage">Wählen Sie einen Film für weitere Details</string>
+    <string name="title">Titel:</string>
+    <string name="originalTitle">Originaler titel: %s (%s)</string>
+    <string name="releaseDate">Veröffentlichungsdatum: %s</string>
+    <string name="time">minutes</string>
     <string name="poster_movie_contentDescription">Filmplakat</string>
     <string name="backdrop_movie_ContentDescription">Szenerie</string>
+    <string name="genre_comedy">Komödie</string>
+    <string name="detailsLabel">Details</string>
 </resources>

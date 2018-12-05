@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/detailsFragmentConstraintLayout">
+
+            <!--
+                <ImageView
+                    android:id="@+id/posterImageView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="@dimen/paddingleftright"
+                    android:contentDescription="@string/poster_movie_contentDescription"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/action" />-->
+
+        <TextView
+            android:id="@+id/titleTextView_Fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/originalTitleLabel"
+            android:text="@string/originalTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:alpha="0.7"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleTextView_Fragment"
+            />
+
+        <TextView
+            android:id="@+id/originalTitleTextView_Fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="8dp"
+            android:alpha="0.7"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintTop_toBottomOf="@+id/titleTextView_Fragment"
+            app:layout_constraintStart_toEndOf="@+id/originalTitleLabel"/>
+
+        <TextView
+            android:id="@+id/releaseDateLabel"
+            android:text="@string/releaseDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:alpha="0.7"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/originalTitleTextView_Fragment" />
+
+        <TextView
+            android:id="@+id/releaseDateTextView_Fragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="8dp"
+            android:alpha="0.7"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintTop_toBottomOf="@+id/originalTitleTextView_Fragment"
+            app:layout_constraintStart_toEndOf="@+id/releaseDateLabel"/>
+
+        <TextView
+            android:id="@+id/runtimeLabel"
+            android:text="@string/runtime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:alpha="0.7"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/releaseDateTextView_Fragment" />
+
+        <TextView
+            android:id="@+id/runtimeTextView_Fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="8dp"
+            android:alpha="0.7"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintTop_toBottomOf="@+id/releaseDateTextView_Fragment"
+            app:layout_constraintStart_toEndOf="@+id/runtimeLabel"/>
+
+        <TextView
+            android:id="@+id/timeLabel"
+            android:text="@string/time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="8dp"
+            android:alpha="0.7"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintTop_toBottomOf="@+id/releaseDateTextView_Fragment"
+            app:layout_constraintStart_toEndOf="@+id/runtimeTextView_Fragment"
+            />
+
+</android.support.constraint.ConstraintLayout>

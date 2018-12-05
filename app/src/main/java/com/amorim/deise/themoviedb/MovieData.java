@@ -13,6 +13,7 @@ public class MovieData {
     @SerializedName("runtime") public int mRuntime;
     @SerializedName("release_date") public String mReleaseDate;
     @SerializedName("id") public int mId;
+    @SerializedName("video") public boolean mVideo;
     public List<GenreDataDetails> genres_;
 
     public String getmPoster() {return mPoster;}
@@ -31,6 +32,8 @@ public class MovieData {
     public void setmReleaseDate(String mReleaseDate) {this.mReleaseDate = mReleaseDate;}
     public int getmId() {return mId;}
     public void setmId(int mId) {this.mId = mId;}
+    public  boolean getmVideo(){return mVideo;}
+    public void setmVideo(boolean mVideo){this.mVideo = mVideo;}
 
     public List<GenreDataDetails> getList(){
         return genres_;

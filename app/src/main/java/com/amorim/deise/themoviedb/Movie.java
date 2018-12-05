@@ -9,12 +9,9 @@ public class Movie {
     public final String mRuntime;
     public final String mReleaseDate;
     public final String mId;
-   // public final String genreId;
-    //public final String genreName;
+    public final Boolean mVideo;
 
-
-
-    public Movie(String mPoster, String mBackdrop, String mTitle, String mOriginalTitle, String mOverview, String mRuntime, String mReleaseDate, String mId, String genreId, String genreName) {
+    public Movie(String mPoster, String mBackdrop, String mTitle, String mOriginalTitle, String mOverview, String mRuntime, String mReleaseDate, String mId, String genreId, String genreName, Boolean mVideo) {
         this.mPoster = mPoster;
         this.mBackdrop = mBackdrop;
         this.mTitle = mTitle;
@@ -23,8 +20,7 @@ public class Movie {
         this.mRuntime = mRuntime;
         this.mReleaseDate = mReleaseDate;
         this.mId = mId;
-        //this.genreId = genreId;
-       // this.genreName = genreName;
+        this.mVideo = mVideo;
     }
 
     public Movie(MovieData data){
@@ -36,9 +32,7 @@ public class Movie {
         this.mRuntime = String.valueOf(data.getmRuntime());
         this.mReleaseDate = data.getmReleaseDate();
         this.mOverview = data.getmOverview();
-        //this.genreId = String.valueOf(data.getList());
-        //this.genreName = data.getList().;
-
+        this.mVideo = data.mVideo;
     }
 
 }

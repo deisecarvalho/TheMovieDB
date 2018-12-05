@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="wellcomemessage">Bienvenido</string>
-    <string name="textgenreone">Aquí puedes leer la sinopsis de tus películas favoritas. Elige un género</string>
+    <string name="apresentationMessage">Aquí puedes leer la sinopsis de tus películas favoritas. Elige un género</string>
     <string name="genre_action">Acción</string>
-    <string name="genre_adventure">Aventuras</string>
-    <string name="genre_horror">Horror</string>
+    <string name="genre_adventure">Aventura</string>
+    <string name="genre_horror">Terror</string>
     <string name="genre_romance">Romance</string>
     <string name="genre_fantasy">Fantasía</string>
-    <string name="genre_war">Guerra</string>
+    <string name="genre_war">Bélica</string>
     <string name="genre_mistery">Misterio</string>
     <string name="more">Ver más</string>
-    <string name="textgenretwo">Elige un género</string>
-    <string name="overviewtitle">Visión general</string>
-    <string name="runtime">Duración: %s</string>
-    <string name="movies_by_genre">Lista de películas de género %s</string>
-    <string name="movietitle">Título: %s</string>
-    <string name="original_title">Titulo original: %s (%s)</string>
-    <string name="release_date">Fecha de lanzamiento: %s</string>
+    <string name="selectGenreMessage">Elige un género</string>
+    <string name="overviewLabel">Visión general</string>
+    <string name="runtime">Duración:</string>
+    <string name="selectMovieMessage">Elija una película para más detalles</string>
+    <string name="title">Título:</string>
+    <string name="originalTitle">Titulo original: %s (%s)</string>
+    <string name="releaseDate">Fecha de lanzamiento: %s</string>
+    <string name="time">minutes</string>
     <string name="poster_movie_contentDescription">Cartel de la película</string>
     <string name="backdrop_movie_ContentDescription">Paisaje de la película</string>
+    <string name="genre_comedy">Comedia</string>
+    <string name="detailsLabel">Detalles</string>
 </resources>

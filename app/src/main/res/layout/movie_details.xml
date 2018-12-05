@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+
+    <fragment
+        android:id="@+id/backdropFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="Backdrop"
+        android:name="com.amorim.deise.themoviedb.DetailsFragments.BackdropFragment"
+        class="com.amorim.deise.themoviedb.DetailsFragments.BackdropFragment"
+        tools:layout="@layout/backdrop" />
+
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:tag="Details"
+        android:name="com.amorim.deise.themoviedb.DetailsFragments.DetailsFragment"
+        class="com.amorim.deise.themoviedb.DetailsFragments.DetailsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/details" />
+
+    <fragment
+        android:id="@+id/overviewFragment"
+        android:tag="Overview"
+        android:name="com.amorim.deise.themoviedb.DetailsFragments.OverviewFragment"
+        class="com.amorim.deise.themoviedb.DetailsFragments.OverviewFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/overview"/>
+
+<!--
+    <fragment
+        android:id="@+id/reviewFragment"
+        android:name="com.amorim.deise.themoviedb.DetailsFragments.ReviewsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/reviews"
+        android:tag="Review" />
+
+    <fragment
+        android:id="@+id/trailerFragment"
+        android:name="com.amorim.deise.themoviedb.DetailsFragments.TrailersFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="Trailer"
+        tools:layout="@layout/trailers" />
+
+-->
+</LinearLayout>

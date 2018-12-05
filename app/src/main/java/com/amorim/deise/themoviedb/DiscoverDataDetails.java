@@ -4,13 +4,14 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
-public class mDiscoverDataDetails {
+public class DiscoverDataDetails {
 
     @SerializedName("id") private int mId;
     @SerializedName("title") private String mTitle;
     @SerializedName("original_title") private String mOriginalTitle;
     @SerializedName("release_date") private String mReleaseDate;
     @SerializedName("poster_path") private String mPosterPath;
+    @SerializedName("vote_average") private float mPopularity;
     private List<Integer> genres_ids;
 
     public int getMovieId() {return mId;}
@@ -26,8 +27,9 @@ public class mDiscoverDataDetails {
     public List<Integer> getList(){
         return genres_ids;
     }
-    public void setList(List<Integer> genres_ids){
-        this.genres_ids = genres_ids;
+    public void setList(List<Integer> genres_ids){this.genres_ids = genres_ids;}
+    public float getmPopularity() {return mPopularity;}
+    public void setmPopularity(float mPopularity) {this.mPopularity = mPopularity;
     }
 }
 

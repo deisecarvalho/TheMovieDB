@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="api_key" translatable="false">3d300a0230a2d4a14ee863b22e2ea788</string>
-    <string name="api_endpoint" translatable="false">https://api.themoviedb.org/3/</string>
+    <string name="api_endpoint" translatable="false">https://api.themoviedb.org/3</string>
 
-    <string name="web_service_url_movies" translatable="false">discover/movie</string>
-    <string name="web_service_url_genres" translatable="false">genre/movie/list</string>
-    <string name="web_service_url_moviedetails" translatable="false">movie/</string>
+    <string name="web_service_url_movies" translatable="false">/discover/movie</string>
+    <string name="web_service_url_genres" translatable="false">/genre/movie/list</string>
+    <string name="web_service_url_moviedetails" translatable="false">/movie/</string>
+    <string name="web_service_url_trailers" translatable="false">/videos?</string>
+    <string name="web_service_url_review" translatable="false">/reviews?api_key=</string>
     
-    <string name="base_url_getPoster" translatable="false">https://image.tmdb.org/t/p/w154</string>
+    <string name="base_url_getPoster" translatable="false">https://image.tmdb.org/t/p/w185</string>
+    <string name="base_url_getBackdrop" translatable="false">https://image.tmdb.org/t/p/w1280</string>
+    <string name="base_url_getVideo" translatable="false">http://www.youtube.com/watch?v=</string>
+    <string name="base_url_getVideoThumbnail" translatable="false">http://img.youtube.com/vi/</string>
 
     <string name="web_service_url_auth_guest_session" translatable="false">authentication/guest_session/new?api_key=</string>
 

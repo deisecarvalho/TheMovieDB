@@ -8,6 +8,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 
 import com.google.gson.Gson;
 
@@ -19,10 +20,10 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-class Movies extends AppCompatActivity {
+public class MovieFragments extends AppCompatActivity {
     private MovieAdapter mAdapter;
     private List<Movie> mMovie;
-    private String movieCliked;
+    private String movieClicked;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -35,14 +36,23 @@ class Movies extends AppCompatActivity {
         mMovieRecyclerView.setAdapter(mAdapter);
 
         Intent intent = getIntent();
-        movieCliked = (String) intent.getSerializableExtra("movieID");
+        movieClicked = (String) intent.getSerializableExtra("movieID");
+
+        setupToolbar();
 
         WebServiceClient client = new WebServiceClient();
         client.execute(createURL());
-
-
     }
 
+    private void setupToolbar() {
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setDisplayShowTitleEnabled(false);
+        }
+    }
 
 
     private class WebServiceClient extends AsyncTask<String, Void, String> {
@@ -88,8 +98,31 @@ class Movies extends AppCompatActivity {
         String languageDevice = Resources.getSystem().getConfiguration().getLocales().toLanguageTags();
         String getMovieDetails = getString(R.string.web_service_url_moviedetails);
         try{
-            return endpoint + getMovieDetails + movieCliked + "?api_key=" + apikey + "&language=" + languageDevice;
+            return endpoint + getMovieDetails + movieClicked + "?api_key=" + apikey + "&language=" + languageDevice.substring(0,5);
         }
         catch (Exception e){e.printStackTrace(); return null;}
     }
+
+/*
+    private String createURL(String type){
+        String apikey = getString(R.string.api_key);
+        String endpoint = getString(R.string.api_endpoint);
+        String getMovie = getString(R.string.web_service_url_moviedetails);
+        String getReviews = getString(R.string.web_service_url_review);
+        String getTrailers = getString(R.string.web_service_url_trailers);
+        String languageDevice = Resources.getSystem().getConfiguration().getLocales().toLanguageTags().substring(0,5);
+        try{
+
+            if(type.equals("movie")){
+                return endpoint + getMovie + movieClicked + "?api_key=" + apikey + "&language=" + languageDevice;
+            }else if (type.equals("review")){
+                return endpoint + getMovie + movieClicked + getReviews + apikey + "&language=" + languageDevice;
+            }else if(type.equals("trailer")){
+                return endpoint + getMovie + movieClicked + getTrailers + "?api_key=" + apikey + "&language=" + languageDevice;
+            }else return null;
+
+        }
+        catch (Exception e){e.printStackTrace(); return null;}
+    }*/
+
 }

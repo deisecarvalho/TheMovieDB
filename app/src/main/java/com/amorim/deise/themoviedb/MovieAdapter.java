@@ -1,5 +1,6 @@
 package com.amorim.deise.themoviedb;
 
+
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -15,11 +16,13 @@ import java.util.List;
 
 public class MovieAdapter  extends RecyclerView.Adapter<MovieAdapter.MovieViewHolder> {
     private List<Movie> mMovie;
+    private Context mContext;
     private LayoutInflater mInflater;
 
     MovieAdapter(Context context, List<Movie> mMovie){
         this.mInflater = LayoutInflater.from(context);
         this.mMovie = mMovie;
+        this.mContext = context;
     }
 
     @NonNull
@@ -40,55 +43,49 @@ public class MovieAdapter  extends RecyclerView.Adapter<MovieAdapter.MovieViewHo
         movieViewHolder.mRuntime.setText(movie_.mRuntime);
         movieViewHolder.mOverview.setText(movie_.mOverview);
 
-        Picasso.get().load(movie_.mPoster).into(movieViewHolder.mPoster);
-        Picasso.get().load(movie_.mBackdrop).into(movieViewHolder.mPoster);
+        //Picasso.get().load(movie_.mPoster).into(movieViewHolder.mPoster);
+        Picasso.get().load(mContext.getString(R.string.base_url_getBackdrop) + movie_.mBackdrop).into(movieViewHolder.mBackdrop);
+
     }
     @Override
     public int getItemCount() {return (mMovie == null) ? 0 : mMovie.size();}
 
 
     /*
-
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-
         MovieViewHolder viewHolder = new MovieViewHolder(view);
-
         Movie movie_ = mMovie.get(position);
         viewHolder.mTitle.setText(movie_.mTitle);
         viewHolder.mOriginalTitle.setText(movie_.mOriginalTitle);
         viewHolder.mReleaseDate.setText(movie_.mReleaseDate);
         viewHolder.mRuntime.setText(movie_.mRuntime);
         viewHolder.mOverview.setText(movie_.mOverview);
-
         Picasso.get().load(movie_.mPoster).into(viewHolder.mPoster);
         Picasso.get().load(movie_.mBackdrop).into(viewHolder.mPoster);
-
-
-
         return null;
     }
 */
     static class MovieViewHolder extends RecyclerView.ViewHolder {
-        ImageView mPoster;
+        //ImageView mPoster;
         ImageView mBackdrop;
         TextView mTitle;
         TextView mOriginalTitle;
         TextView mOverview;
         TextView mRuntime;
         TextView mReleaseDate;
-        TextView mId;
+        //TextView mId;
 
         MovieViewHolder(View view){
             super(view);
-            mPoster = view.findViewById(R.id.posterImageView);
+            //mPoster = view.findViewById(R.id.posterImageView);
             mBackdrop = view.findViewById(R.id.backdropImageView);
             mTitle = view.findViewById(R.id.titleTextView);
             mOriginalTitle = view.findViewById(R.id.originalTitleTextView);
             mOverview = view.findViewById(R.id.overviewTextView);
             mRuntime = view.findViewById(R.id.runtimeTextView);
             mReleaseDate = view.findViewById(R.id.releaseDateTextView);
-            mId = view.findViewById(R.id.movieDetalheId);
+            //mId = view.findViewById(R.id.movieDetalheId);
         }
 
     }

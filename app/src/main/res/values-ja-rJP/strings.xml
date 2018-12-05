@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="wellcomemessage">ウェルカム</string>
-    <string name="textgenreone">ここであなたの好きな映画の概要を読むことができます。 ジャンルを選択</string>
+    <string name="apresentationMessage">ここであなたの好きな映画の概要を読むことができます。 ジャンルを選択</string>
     <string name="genre_action">アクション</string>
-    <string name="genre_adventure">冒険</string>
+    <string name="genre_adventure">アドベンチャー</string>
     <string name="genre_horror">ホラー</string>
     <string name="genre_romance">ロマンス</string>
     <string name="genre_fantasy">ファンタジー</string>
     <string name="genre_war">戦争</string>
-    <string name="genre_mistery">ミステリー</string>
+    <string name="genre_mistery">謎</string>
     <string name="more">続きを見る</string>
-    <string name="textgenretwo">ジャンルを選択</string>
-    <string name="overviewtitle">概要</string>
-    <string name="runtime">生涯: %s</string>
-    <string name="movies_by_genre">ジャンルのムービーリスト: %s</string>
-    <string name="movietitle">タイトル: %s</string>
-    <string name="original_title">元のタイトル: %s (%s)</string>
-    <string name="release_date">発売日: %s</string>
+    <string name="selectGenreMessage">ジャンルを選択</string>
+    <string name="overviewLabel">概要</string>
+    <string name="runtime">生涯:</string>
+    <string name="selectMovieMessage">詳細はムービーを選択してください</string>
+    <string name="title">タイトル:</string>
+    <string name="originalTitle">元のタイトル: %s (%s)</string>
+    <string name="releaseDate">発売日: %s</string>
+    <string name="time">minutes</string>
     <string name="poster_movie_contentDescription">映画ポスター</string>
     <string name="backdrop_movie_ContentDescription">景色</string>
+    <string name="genre_comedy">コメディ</string>
+    <string name="detailsLabel">詳細</string>
 </resources>

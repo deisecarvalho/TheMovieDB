@@ -14,4 +14,7 @@ public class Genre {
         this.name = data.getGenreName();
     }
 
+    public String getId() {
+        return id;
+    }
 }

@@ -4,20 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Discover"
+    tools:context=".Main_Discover"
     android:orientation="vertical">
 
     <TextView
         android:id="@+id/apresentationMoviesTextView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:text="@string/movies_by_genre"
-        android:textSize="@dimen/listgenretexsize" />
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/selectMovieMessage"
+        android:textSize="24sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimaryLight" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/movieRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+        android:padding="10dp"/>
 </LinearLayout>

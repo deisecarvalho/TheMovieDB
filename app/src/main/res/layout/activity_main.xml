@@ -29,7 +29,7 @@
         android:paddingTop="@dimen/paddingtopbotton"
         android:paddingRight="@dimen/paddingleftright"
         android:paddingBottom="@dimen/paddingtopbotton"
-        android:text="@string/textgenreone"
+        android:text="@string/apresentationMessage"
         android:textSize="@dimen/fixedtextSize" />
 
     <GridLayout
@@ -65,7 +65,8 @@
                 android:drawableTop="@drawable/action"
                 android:gravity="center"
                 android:text="@string/genre_action"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:onClick="getMoviesByGenre"/>
         </android.support.v7.widget.CardView>
 
         <!-- linha 1, coluna 2 -->
@@ -89,7 +90,8 @@
                 android:drawableTop="@drawable/adventure"
                 android:gravity="center"
                 android:text="@string/genre_adventure"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:onClick="getMoviesByGenre"/>
         </android.support.v7.widget.CardView>
 
         <!-- linha 1, coluna 3 -->
@@ -113,7 +115,8 @@
                 android:drawableTop="@drawable/horror"
                 android:gravity="center"
                 android:text="@string/genre_horror"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:onClick="getMoviesByGenre"/>
         </android.support.v7.widget.CardView>
 
         <!-- linha 2, coluna 1 -->
@@ -137,7 +140,8 @@
                 android:drawableTop="@drawable/romantic"
                 android:gravity="center"
                 android:text="@string/genre_romance"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:onClick="getMoviesByGenre"/>
         </android.support.v7.widget.CardView>
 
         <!-- linha 2, coluna 2 -->
@@ -161,7 +165,8 @@
                 android:drawableTop="@drawable/fantasy"
                 android:gravity="center"
                 android:text="@string/genre_fantasy"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:onClick="getMoviesByGenre"/>
         </android.support.v7.widget.CardView>
 
         <!-- linha 2, coluna 3 -->
@@ -185,7 +190,8 @@
                 android:drawableTop="@drawable/war"
                 android:gravity="center"
                 android:text="@string/genre_war"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:onClick="getMoviesByGenre"/>
         </android.support.v7.widget.CardView>
 
         <!-- linha 3, coluna 1 -->
@@ -206,10 +212,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:drawableTop="@drawable/detective"
+                android:drawableTop="@drawable/comedy"
                 android:gravity="center"
-                android:text="@string/genre_mistery"
-                android:textStyle="bold" />
+                android:text="@string/genre_comedy"
+                android:textStyle="bold"
+                android:onClick="getMoviesByGenre"/>
         </android.support.v7.widget.CardView>
 
         <!-- linha 3, coluna 2 -->

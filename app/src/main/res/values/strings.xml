@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">The Movie DB</string>
+    <string name="app_name" translatable="false">Kanema</string>
     <string name="wellcomemessage">Wellcome</string>
-    <string name="textgenreone">Here you can read the synopsis of your favorite movies. Choose a genre</string>
+
+    <string name="apresentationMessage">Here you can read the synopsis of your favorite movies. Choose a genre</string>
+
+    <string name="selectGenreMessage">Choose a genre</string>
+    <string name="selectMovieMessage">Choose a movie for more details</string>
+
     <string name="genre_action">Action</string>
     <string name="genre_adventure">Adventure</string>
     <string name="genre_horror">Horror</string>
@@ -10,17 +15,21 @@
     <string name="genre_fantasy">Fantasy</string>
     <string name="genre_war">War</string>
     <string name="genre_mistery">Mystery</string>
+    <string name="genre_comedy">Comedy</string>
     <string name="more">See more</string>
-    <string name="textgenretwo">Choose a genre</string>
-    <string name="movietitle">Title: %s</string>
-    <string name="original_title">Original Title: %s</string>
-    <string name="release_date">Release Date: %s</string>
-    <string name="poster_movie_contentDescription">mDiscover poster</string>
+
     <string name="genre" translatable="false">%s</string>
-    <string name="movies_by_genre">Movie list of genre %s</string>
-    <string name="backdrop_movie_ContentDescription">mDiscover backdrop</string>
-    <string name="overview" translatable="false">%s</string>
-    <string name="runtime">Runtime: %s</string>
-    <string name="overviewtitle">Overview</string>
+    <string name="title"></string>
+    <string name="originalTitle">Original Title:</string>
+    <string name="releaseDate">Release Date:</string>
+    <string name="runtime">Runtime:</string>
+    <string name="overviewLabel">Overview</string>
+    <string name="time">minutes</string>
+
+    <string name="poster_movie_contentDescription">Movie poster</string>
+    <string name="backdrop_movie_ContentDescription">Movie backdrop</string>
+
     <string name="genreId" translatable="false">id</string>
+    <string name="detailsLabel">Details</string>
+
 </resources>

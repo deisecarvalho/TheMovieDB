@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="wellcomemessage">Wellcome</string>
-    <string name="textgenreone">Aqui você pode ler a sinopse dos seus filmes favoritos. Escolha um gênero</string>
+    <string name="wellcomemessage">Bem vindo</string>
+    <string name="apresentationMessage">Aqui você pode ler a sinopse dos seus filmes favoritos. Escolha um gênero</string>
     <string name="genre_action">Ação</string>
     <string name="genre_adventure">Aventura</string>
-    <string name="genre_horror">Horror</string>
+    <string name="genre_horror">Terror</string>
     <string name="genre_romance">Romance</string>
     <string name="genre_fantasy">Fantasia</string>
     <string name="genre_war">Guerra</string>
     <string name="genre_mistery">Mistério</string>
     <string name="more">Veja mais</string>
-    <string name="textgenretwo">Escolha um gênero</string>
-    <string name="overviewtitle">Sinopse</string>
-    <string name="runtime">Duração: %s</string>
-    <string name="movies_by_genre">Lista de filmes do gênero %s</string>
-    <string name="movietitle">Título: %s</string>
-    <string name="original_title">Título original: %s (%s)</string>
-    <string name="release_date">Data de lançamento: %s</string>
+    <string name="selectGenreMessage">Escolha um gênero</string>
+    <string name="overviewLabel">Sinopse</string>
+    <string name="runtime">Duração:</string>
+    <string name="selectMovieMessage">Escolha um filme para mais detalhes</string>
+    <string name="title">Título:</string>
+    <string name="originalTitle">Título original:</string>
+    <string name="time">minutos</string>
+    <string name="releaseDate">Data de lançamento:</string>
     <string name="poster_movie_contentDescription">Cartaz do filme</string>
     <string name="backdrop_movie_ContentDescription">Cenário do filme</string>
+    <string name="genre_comedy">Comédia</string>
+    <string name="detailsLabel">Detalhes</string>
 </resources>

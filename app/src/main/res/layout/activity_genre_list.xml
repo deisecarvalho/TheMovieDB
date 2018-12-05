@@ -5,23 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Genres">
+    tools:context=".Main_Genre">
 
     <TextView
         android:id="@+id/selectGenreTextView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingLeft="@dimen/paddingleftright"
-        android:paddingTop="@dimen/paddingtopbotton"
-        android:paddingRight="@dimen/paddingleftright"
-        android:paddingBottom="@dimen/paddingtopbotton"
-        android:text="@string/textgenretwo"
-        android:textSize="@dimen/fixedtextSize"/>
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/selectGenreMessage"
+        android:textSize="24sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimaryLight" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/genreRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:padding="12dp"/>
+        android:padding="10dp"/>
 </LinearLayout>

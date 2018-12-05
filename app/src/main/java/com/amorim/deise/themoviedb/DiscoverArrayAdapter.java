@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,12 +16,14 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 import java.util.List;
 
-public class mDiscoverArrayAdapter extends RecyclerView.Adapter<mDiscoverArrayAdapter.MovieViewHolder> {
-    private List<mDiscover> mDiscover;
+public class DiscoverArrayAdapter extends RecyclerView.Adapter<DiscoverArrayAdapter.MovieViewHolder> {
+    private List<Discover> mDiscover;
     private LayoutInflater dInflater;
+    private Context dContext;
 
-    mDiscoverArrayAdapter(Context context, List<mDiscover> mDiscover) {
-        this.dInflater = LayoutInflater.from(context);
+    DiscoverArrayAdapter(Context context, List<Discover> mDiscover) {
+        this.dContext = context;
+        this.dInflater = LayoutInflater.from(dContext);
         this.mDiscover = mDiscover;
     }
 
@@ -35,14 +36,15 @@ public class mDiscoverArrayAdapter extends RecyclerView.Adapter<mDiscoverArrayAd
 
     @Override
     public void onBindViewHolder(@NonNull MovieViewHolder movieViewHolder, int i) {
-        mDiscover mDiscover_ = mDiscover.get(i);
+        Discover mDiscover_ = mDiscover.get(i);
 
         movieViewHolder.mTitle.setText(mDiscover_.title);
         movieViewHolder.mOriginalTitle.setText(mDiscover_.original_title);
         movieViewHolder.mReleaseDate.setText(mDiscover_.release_date);
         movieViewHolder.mId.setText(mDiscover_.id);
+        movieViewHolder.mPopularity.setText(mDiscover_.popularity);
 
-        Picasso.get().load(mDiscover_.poster_path).into(movieViewHolder.mPoster);
+        Picasso.get().load(dContext.getString(R.string.base_url_getPoster) + mDiscover_.poster_path).into(movieViewHolder.mPoster);
     }
 
     @Override
@@ -56,6 +58,7 @@ public class mDiscoverArrayAdapter extends RecyclerView.Adapter<mDiscoverArrayAd
         TextView mReleaseDate;
         ImageView mPoster;
         TextView mId;
+        TextView mPopularity;
 
         MovieViewHolder(View view){
             super(view);
@@ -64,23 +67,22 @@ public class mDiscoverArrayAdapter extends RecyclerView.Adapter<mDiscoverArrayAd
             mReleaseDate = view.findViewById(R.id.movieReleaseDateTextView);
             mPoster = view.findViewById(R.id.posterImageView);
             mId = view.findViewById(R.id.movieId);
+            mPopularity = view.findViewById(R.id.moviePopularity);
 
             view.setOnClickListener(this);
         }
 
         @Override
         public void onClick(View v) {
-            Log.d((String) v.getTag(),"Onclick" + getAdapterPosition() + mId.getText());
-
-            Intent intent = new Intent(v.getContext(), Movies.class);
+            Intent movieIntent = new Intent(v.getContext(), MovieFragments.class);
             Bundle bundle_ = new Bundle();
             bundle_.putString("movieID", (String) mId.getText());
-            intent.putExtras(bundle_);
-            v.getContext().startActivity(intent);
+            movieIntent.putExtras(bundle_);
+            v.getContext().startActivity(movieIntent);
         }
     }
 
-    public void swapMovieList(ArrayList<mDiscover> movieslist){
+    public void swapMovieList(ArrayList<Discover> movieslist){
         this.mDiscover.clear();
         this.mDiscover.addAll(movieslist);
         notifyDataSetChanged();
